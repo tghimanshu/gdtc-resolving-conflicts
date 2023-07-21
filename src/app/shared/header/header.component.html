@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" class="header">
+  <h3>Resolving Conflicts</h3>
+  <div>
+    <button mat-button [routerLink]="['/']">Users</button>
+    <button mat-button [matMenuTriggerFor]="menu">Profiles</button>
+    <mat-menu #menu="matMenu">
+      <button
+        mat-menu-item
+        [matTooltip]="'test'"
+        matTooltipClass="app-tooltip"
+        [routerLink]="['/profile']"
+      >
+        Himanshu
+      </button>
+      <button mat-menu-item [matTooltip]="'test'" matTooltipClass="app-tooltip">
+        Ashish
+      </button>
+      <button mat-menu-item [matTooltip]="'test'" matTooltipClass="app-tooltip">
+        Manasi
+      </button>
+      <button mat-menu-item [matTooltip]="'test'" matTooltipClass="app-tooltip">
+        Mustafa
+      </button>
+      <button mat-menu-item [matTooltip]="'test'" matTooltipClass="app-tooltip">
+        Azmal
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
