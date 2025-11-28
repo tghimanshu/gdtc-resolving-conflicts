@@ -16,6 +16,10 @@ import { HimanshuProfileComponent } from './profiles/himanshu-profile/himanshu-p
 import { UsersComponent } from './components/users/users.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
+/**
+ * The main module of the application.
+ * Declares components and imports necessary modules.
+ */
 @NgModule({
   declarations: [
     AppComponent,

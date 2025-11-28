@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { UsersComponent } from './components/users/users.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
+/**
+ * Defines the routes for the application.
+ */
 const routes: Routes = [
   {
     path: '',
@@ -14,6 +17,10 @@ const routes: Routes = [
   },
 ];
 
+/**
+ * Module responsible for handling application routing.
+ * Configures the router module with the defined routes.
+ */
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
