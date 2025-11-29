@@ -1,27 +1,96 @@
-# ResolvingConflicts
+# Resolving Conflicts
 
-This project was created to test how juniors resolve git conflicts.
+This Angular application demonstrates a simple user management system with profile viewing capabilities. It was originally created to test how developers resolve git conflicts but serves as a functional example of an Angular application using Angular Material.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Running Tests](#running-tests)
+- [Build](#build)
 
-## Code scaffolding
+## Project Structure
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The project is structured as a standard Angular CLI application:
+
+- `src/app/components`: Contains the main feature components.
+  - `users`: Displays a list of users fetched from an external API.
+  - `profile`: A placeholder component for user profiles.
+- `src/app/profiles`: Contains specific user profile implementations.
+  - `himanshu-profile`: A specific profile component.
+- `src/app/services`: Contains services for data fetching and business logic.
+  - `users.service.ts`: Service to fetch user data from `https://jsonplaceholder.typicode.com/users`.
+- `src/app/shared`: Contains shared components.
+  - `header`: The application header/navigation bar.
+
+## Features
+
+- **User List**: Fetches and displays a list of users including their ID, name, username, email, phone, and website.
+- **Material UI**: Uses Angular Material for consistent and modern UI components (Tables, Toolbars, Buttons, etc.).
+- **Routing**: Basic routing between the user list and profile pages.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- **Node.js**: You need Node.js installed. This project was built using Angular CLI, which requires Node.js.
+- **npm**: npm is usually installed with Node.js.
+
+## Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone <repository-url>
+    cd resolving-conflicts
+    ```
+
+2.  Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+1.  Start the development server:
+    ```bash
+    npm start
+    ```
+    Or directly with Angular CLI:
+    ```bash
+    ng serve
+    ```
+
+2.  Open your browser and navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Running Tests
+
+To execute the unit tests via [Karma](https://karma-runner.github.io):
+
+```bash
+npm test
+```
+Or:
+```bash
+ng test
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To build the project for production:
 
-## Running unit tests
+```bash
+npm run build
+```
+Or:
+```bash
+ng build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The build artifacts will be stored in the `dist/` directory.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
+## Further Help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
